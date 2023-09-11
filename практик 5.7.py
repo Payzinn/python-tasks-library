@@ -17,6 +17,27 @@ def third():
     special_symbols = '@, №, $, %, ^, &, *, ()'.split(',')
     extensions = '.txt, .docx'.split(',')
     file_name = input('Название файла: ')
+    success = True
+    for i in special_symbols:
+        if file_name.startswith(i):
+            print('Ошибка символа')
+            success = False
+            break
+    for m in extensions:
+        if file_name.endswith(m):
+            success = True
+            break
+    else:
+        print('Ошибка расширения')
+        success = False
 
-third()
+    if success:
+        print('валид')
+    else:
+        print('невалид')
 
+def fourth():
+    text = input('Введите строку: ').title()
+    print('Результат: {}' .format(text))
+
+fourth()
