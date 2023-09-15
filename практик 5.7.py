@@ -40,4 +40,43 @@ def fourth():
     text = input('Введите строку: ').title()
     print('Результат: {}' .format(text))
 
-fourth()
+
+
+def fivth():
+    digits = '0123456789'
+    letters = 'Q W E R T Y U I O P A S D F G H J K L Z X C V B N M'
+    success = False
+    
+    while success == False:
+        digit_counter = 0
+        pass_counter = 0
+        letter_counter = 0
+        password = input('Введите пароль: ')
+        for i in password:
+            if i in digits:
+                digit_counter += 1
+
+        if digit_counter < 3:
+            print('цифр менее 3')
+        else:
+            pass_counter += 1 
+
+
+        if len(password) < 8:
+            print('длина менее 8')
+        elif len(password) > 8 or len(password) == 8:
+            pass_counter += 1
+
+        for m in password:
+            if m in letters:
+                letter_counter += 1
+
+        if letter_counter < 1:
+            print('нет заглавной буквы')
+        else:
+            pass_counter +=1
+
+        if pass_counter == 3:
+            print('Это надёжный пароль')
+            success = True
+fivth()
