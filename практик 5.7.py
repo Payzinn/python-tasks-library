@@ -79,4 +79,48 @@ def fivth():
         if pass_counter == 3:
             print('Это надёжный пароль')
             success = True
-fivth()
+
+
+def sixth():
+    s = input("Введите строку: ")
+
+    count = 1
+    result = ""
+
+    for i in range(len(s)):
+        if i > 0 and s[i-1] == s[i]:
+            count += 1
+        else:
+            if i > 0:
+                result += str(count)
+            result += s[i]
+            count = 1
+
+    result += str(count)
+    print("Закодированная строка: {}".format(result))
+
+def seventh():
+    while True:
+        ip = input('Введите IP: ')
+        parts = ip.split('.')
+
+        if len(parts) != 4:
+            print('Адрес — это четыре числа, разделённые точками.')
+            continue
+
+        valid_ip = True
+        for part in parts:
+            if not part.isdigit():
+                print(f'{part} — это не целое число.')
+                valid_ip = False
+                break
+
+            num = int(part)
+            if num < 0 or num > 255:
+                print(f'{num} превышает 255.' if num > 255 else f'{num} меньше 0.')
+                valid_ip = False
+                break
+
+        if valid_ip:
+            print('IP-адрес корректен.')
+            break
