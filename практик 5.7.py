@@ -124,3 +124,47 @@ def seventh():
         if valid_ip:
             print('IP-адрес корректен.')
             break
+
+def eight():
+    first_string = input('Первая строка: ')
+    second_string = input('Вторая строка: ')
+
+    if len(first_string) > len(second_string):
+        print('Первую строку нельзя получить из второй с помощью циклического сдвига.')
+        exit()
+    
+    if sorted(first_string) != sorted(second_string):
+        print('Первую строку нельзя получить из второй с помощью циклического сдвига.')
+        exit()
+    
+    n = len(first_string)
+
+    for i in range(n):
+        s = second_string[i:] + second_string[:i]
+
+        if s == first_string:
+            print('Первая строка получается из второй со сдвигом {}'.format(i))
+            exit()
+
+    print("Первую строку нельзя получить из второй с помощью циклического сдвига.")
+
+
+
+def nine():
+    def count_uppercase_lowercase(text):
+        uppercase = 0
+        lowercase = 0
+        for i in text:
+            if i.islower():
+                lowercase += 1
+            elif i.isupper():
+                uppercase += 1
+        return uppercase, lowercase
+
+    text = input("Введите строку для анализа: ")
+    uppercase, lowercase = count_uppercase_lowercase(text)
+    print("Количество заглавных букв:", uppercase)
+    print("Количество строчных букв:", lowercase)
+
+
+nine()
