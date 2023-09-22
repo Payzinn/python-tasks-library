@@ -37,7 +37,7 @@ def second():
         print(i, phonebook[i])
 
     print(phonebook.get("Степан"))
-
+second()
 #home task
 
 def one():
@@ -110,4 +110,3 @@ def three():
         print(f'{i} : {result[i]}')
     print(f'Максимальная частота {max(result.values())}')
 
-three()
