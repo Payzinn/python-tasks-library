@@ -5,6 +5,7 @@ def first():
 def second():
     def get_higher_price(percent, price):
         return round(price*(1 + percent / 100), 2)
+    
     prices_now = [1.09, 23.56, 57.84, 4.56, 6.78 ]
     first_percent = int(input('Повышение на первый год: '))
     second_percent = int(input('Повышение на второй год: '))

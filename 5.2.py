@@ -12,7 +12,7 @@ def second():
 
         if "{name}" in grats_template:
             break
-        print('Ошибка отсутствует конструкция {name}')
+        print('Ошибка, отсутствует конструкция {name}')
 
     print('Введите список имён (заканчивается на end) ')
     names_list = []

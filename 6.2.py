@@ -15,7 +15,7 @@ def first():
     for i_sym in sorted(hist.keys()):
         print(i_sym, ":", hist[i_sym])
     print('Максимальная частота: ', max(hist.values()))
-
+first()
 def second():
 
     phonebook = {
@@ -37,7 +37,7 @@ def second():
         print(i, phonebook[i])
 
     print(phonebook.get("Степан"))
-second()
+
 #home task
 
 def one():
