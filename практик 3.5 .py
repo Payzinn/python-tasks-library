@@ -12,6 +12,7 @@ def first():
     t = a.count(3)
     print(t)
     print(a)
+first()
 
 def second():
     list1 = [1, 3, 5, 7, 9]
@@ -24,14 +25,19 @@ def second():
 def third():
     shop = [['каретка', 1200], ['шатун', 1000], ['седло', 300], ['педаль', 100], ['седло', 1500], ['рама', 12000], ['обод', 2000], ['шатун', 200], ['седло', 2700]]
     detail_name = input('Название детали: ')
-    detail_amount = int(input('Кол-во деталей: '))
+    detail_amount = 0
+    for item in shop:
+        if item[0] == detail_name:
+            detail_amount += 1
+    print('кол-во деталей: {}'.format(detail_amount))
     price = 0
 
-    for i in shop:
-        if i[0] == detail_name:
-            price += i[1]*detail_amount
+    for item in shop:
+        if item[0] == detail_name:
+            price += item[1]
 
-    print(f'Общая стоимость: {price}')
+    print('Общая стоимость: {}'.format(price))
+
 
 
 def fourth():
@@ -128,22 +134,22 @@ def seventh():
     print("Остался человек под номером", people[0])
 
 
-def min_additions(seq):
-    n = len(seq)
-    rev_seq = seq[::-1]
-    dp = [[0]*(n+1) for _ in range(n+1)]
-    for i in range(1, n+1):
-        for j in range(1, n+1):
-            if seq[i-1] == rev_seq[j-1]:
-                dp[i][j] = dp[i-1][j-1] + 1
-            else:
-                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
-    lcs_len = dp[n][n]
-    num_additions = n - lcs_len
-    additions = rev_seq[lcs_len:]
-    return num_additions, additions
+# def min_additions(seq):
+#     n = len(seq)
+#     rev_seq = seq[::-1]
+#     dp = [[0]*(n+1) for _ in range(n+1)]
+#     for i in range(1, n+1):
+#         for j in range(1, n+1):
+#             if seq[i-1] == rev_seq[j-1]:
+#                 dp[i][j] = dp[i-1][j-1] + 1
+#             else:
+#                 dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+#     lcs_len = dp[n][n]
+#     num_additions = n - lcs_len
+#     additions = rev_seq[lcs_len:]
+#     return num_additions, additions
 
-seq = [1,2,3,4,5]
-num_additions, additions = min_additions(seq)
-print(f"Минимальное количество чисел, которые нужно добавить: {num_additions}")
-print(f"Числа, которые нужно добавить: {additions}")
+# seq = [1,2,3,4,5]
+# num_additions, additions = min_additions(seq)
+# print(f"Минимальное количество чисел, которые нужно добавить: {num_additions}")
+# print(f"Числа, которые нужно добавить: {additions}")
