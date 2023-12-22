@@ -44,15 +44,23 @@ def one():
 
 def two():
     contacts = {}
-    surname = input('Введите фамилию: ')
-    name = input('Введите имя: ')
-    while surname or name!='q':
-        surname = input('Введите фамилию: ')
-        name = input('Введите имя: ')
-        name_and_surname = (surname,name)
+    surname = input('Введите фамилию (для выхода введите "q"): ')
+    name = input('Введите имя (для выхода введите "q"): ')
+
+    while surname.lower() != 'q' or name.lower() != 'q':
+        if surname.lower() == 'q' or name.lower() == 'q':
+            break  # Выход из цикла, если хотя бы один из вводов равен 'q'
+
+        name_and_surname = (surname, name)
+
         if name_and_surname not in contacts:
             contacts[name_and_surname] = int(input("Введите номер телефона: "))
         else:
-            print('уже есть')
+            print('Уже есть')
+
         print(contacts)
+
+        surname = input('Введите фамилию (для выхода введите "q"): ')
+        name = input('Введите имя (для выхода введите "q"): ')
+        
 two()
