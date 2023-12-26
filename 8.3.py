@@ -24,4 +24,4 @@ def second():
     print(f"Вызов foo(2) завершается и удаляется из стека")
     print("Итоговый ответ — ", result)
 
-second()
+#second()

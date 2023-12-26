@@ -1,15 +1,11 @@
 def first():
-    def print_tax_document(my_tax, *args, **kwargs):
+    def print_my_tax(tax, *args, **kwargs):
         price_sum = 0
-        for i_price in args:
-            price_sum = price_sum + i_price * my_tax / 100
-        print('Сумма цен с учётом налога: {}'.format(price_sum))
-
-        for i_info, i_value in kwargs.items():
-            print('{}:{}'.format(i_info, i_value))
-            
-    my_tax = int(input('Величина налога: '))
-    print_tax_document(my_tax, 1000, 950, 880, 920, 990, 
-                       year = 1997, doc_type ='Report', operation_id = 1110034)
-
+        for i in args:
+            price_sum = price_sum + i * tax / 100
+        print("Общая сумма с учётом налога: {}".format(price_sum))
+        for i_key,i_value in kwargs.items():
+            print("{}: {}".format(i_key,i_value))
+    tax = int(input("Введите налог: "))
+    print_my_tax(tax, 800, 1000, 200, 300, year = 1992, doc_type = "Report", id = 1112224)
 first()
