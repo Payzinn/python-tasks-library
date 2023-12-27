@@ -77,19 +77,19 @@ def third():
     
 
 def fourth():
-    def summa(nums):
+    def summa(*args):
         def recursive_sum(item):
             if isinstance(item, int):  
                 return item
             elif isinstance(item, (list, tuple)): 
-                return sum(recursive_sum(x) for x in item)  
+                return sum(recursive_sum(i) for i in item)  
             return 0
 
-        total_sum = recursive_sum(nums) 
+        total_sum = recursive_sum(args) 
         print(total_sum)
 
-    nums = [20, [30], [40, 45]] 
-    summa(nums)  
+    # nums = [1, [2], (3)]
+    # summa(nums)  
 
 fourth()  
 
