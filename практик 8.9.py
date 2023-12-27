@@ -76,4 +76,33 @@ def third():
     site_creator(site)
     
 
-third()
+def fourth():
+    def summa(nums):
+        def recursive_sum(item):
+            if isinstance(item, int):  
+                return item
+            elif isinstance(item, (list, tuple)): 
+                return sum(recursive_sum(x) for x in item)  
+            return 0
+
+        total_sum = recursive_sum(nums) 
+        print(total_sum)
+
+    nums = [20, [30], [40, 45]] 
+    summa(nums)  
+
+fourth()  
+
+def five():
+
+    def open_list(*args):
+        stringobj = str(args)
+        new_list = []
+        for i in stringobj:
+            if i.isdigit():
+                new_list.append(int(i))
+
+        print(new_list)
+    nice_list = [1, 2, [3, 4], [[5, 6, 7], [8, 9, 10]], [[11, 12, 13], [14, 15], [16, 17, 18]]]
+    open_list(nice_list)
+
