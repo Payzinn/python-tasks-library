@@ -79,17 +79,17 @@ def third():
 def fourth():
     def summa(*args):
         def recursive_sum(item):
-            if isinstance(item, int):  
+            if isinstance(item, int):
                 return item
-            elif isinstance(item, (list, tuple)): 
-                return sum(recursive_sum(i) for i in item)  
+            elif isinstance(item, (list, tuple)):
+                return sum(recursive_sum(i) for i in item)
             return 0
-
-        total_sum = recursive_sum(args) 
+        
+        total_sum = recursive_sum(args)
         print(total_sum)
-
-    nums = [[[1], [2], (3)]]
+    nums = [[[1], [5], (3)]]
     summa(nums)  
+fourth()
 
 # Сначала проверяется, является ли элемент [1], [2], (3) целым числом. Нет, это список/кортеж, поэтому переходим к следующему условию.
 
@@ -118,17 +118,20 @@ def fourth():
 # Вызов print(total_sum) выводит 6.
 
 def five():
+    new_list = []
+    def open_list(item):
+        if isinstance(item, int):
+            new_list.append(item)
+        elif isinstance(item, list):
+            for i in item:
+                open_list(i)
 
-    def open_list(*args):
-        stringobj = str(args)
-        new_list = []
-        for i in stringobj:
-            if i.isdigit():
-                new_list.append(int(i))
-
-        print(new_list)
     nice_list = [1, 2, [3, 4], [[5, 6, 7], [8, 9, 10]], [[11, 12, 13], [14, 15], [16, 17, 18]]]
     open_list(nice_list)
+
+    print(new_list)
+
+#def sixth():
 
 
 
