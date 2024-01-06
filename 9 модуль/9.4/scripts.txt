@@ -1,0 +1,344 @@
+import os
+folder_name = 'access'
+file_name = "admin.bat"
+rel_path = os.path.join(file_name)
+print(rel_path)
+
+abs_path = os.path.abspath(os.path.join(folder_name, file_name))
+print(abs_path)
+
+
+****************************************
+
+import os
+folder =os.path.abspath(os.path.join('..','python-tasks-library'))
+
+for i_elem in os.listdir(folder):
+    print(folder, i_elem)
+
+****************************************
+
+import os
+print(os.path.abspath(os.path.join(os.path.sep)))
+
+****************************************
+
+import os
+folder_name = "project"
+file_name = "my_project.txt"
+
+path = ("docs/{folder}/{file}".format(
+    folder = folder_name,
+    file = file_name))
+
+print(path)
+
+rel_path = os.path.join('docs', folder_name, file_name)
+print(rel_path)
+
+abs_path = os.path.abspath(file_name)
+print(abs_path)
+
+print(os.path.abspath('../new_folder'))# не для всех систем
+print(os.path.abspath(os.path.join('..', 'new_folder')))# подойдёт для любой системы
+print(os.path.abspath('/root_of_drive'))# не для всех систем
+print(os.path.abspath(os.path.join(os.path.sep, "for_every_os_root")))#подойдёт для всех систем
+
+****************************************
+
+import os
+
+def print_list_dir(project):
+    print('\nСодержимое папки проекта', project)
+    if os.path.exists(project):
+        for i_elem in os.listdir(project):
+            path = os.path.join(project, i_elem)
+            print('  ', path)
+    else:
+        print("Каталога проекта не существует,\nили его путь указан неверно")
+
+
+projects_list = ['Prod','Skillbox', 'MyProject']
+for i_project in projects_list:
+    path_to_project = os.path.abspath(os.path.join(i_project))
+    print_list_dir(path_to_project)
+
+****************************************
+
+import os
+
+def find_file(cur_path, file_name):
+    
+    for i_elem in os.listdir(cur_path):
+        path = os.path.join(cur_path, i_elem)
+        print('   Смотрим', path)
+        if file_name == i_elem:
+            return path
+        if os.path.isdir(path):
+            print('Это директория')
+            result = find_file(path, file_name)
+            if result:
+                break
+    
+    else:
+        result = None
+
+    return result
+
+file_path = find_file(os.path.abspath(os.path.join('..','python-tasks-library')), 'projects.py')
+
+if file_path:
+    print('Абсолютный путь к файлу: {}'.format(file_path))
+
+else:
+    print('Файл не найден')
+
+****************************************
+
+import os
+
+path = input('Путь: ')
+
+if os.path.isdir(path):
+    print('Это папка')
+
+elif os.path.isfile(path):
+    print('Это файл')
+    size = os.path.getsize(path)
+    print('Размер файла: {} байт'.format(size))
+
+else:
+    print('Указанного пути не существует')
+
+****************************************
+
+import os
+
+def find_file(cur_path, file_name):
+
+    for i_elem in os.listdir(cur_path):
+        path = os.path.join(cur_path, i_elem)
+
+        if file_name == i_elem:
+            print(os.path.abspath(path))
+
+        elif os.path.isdir(path):
+            result = find_file(path, file_name)
+            
+            if result:
+                break
+    else:
+        result = None
+
+    return result
+
+find_file('9 модуль', 'homework_1.py')
+
+
+****************************************
+
+import os
+first_path = os.path.join('task', 'group_1.txt')
+second_path = os.path.join('task','additional info', 'group_2.txt')
+file_1 = open(first_path, 'r', encoding='utf-8')
+file_2 = open(second_path, 'r', encoding='utf-8')
+
+summa = 0
+diff = 0
+print('group_1.txt')
+for i_line in file_1:
+    info = i_line.split()
+    summa += int(info[2])
+    diff -= int(info[2])
+    
+print(' Сумма очков: {}'.format(summa))
+print(' Разность очков: {}'.format(diff))
+file_1.close()
+
+compose = 1
+
+print('\ngroup_2.txt')
+for i_line in file_2:
+    info = i_line.split()
+    compose *= int(info[2])
+print('  Произведение: {}'.format(compose))
+file_2.close()
+
+****************************************
+
+import os
+import random
+
+def find_file(cur_path, file_name):
+    all_paths = []
+
+    for elem in os.listdir(cur_path):
+        path = os.path.join(cur_path, elem)
+
+        if file_name == elem:
+            all_paths.append(os.path.abspath(path))
+        
+        elif os.path.isdir(path):
+            result = find_file(path, file_name)
+            
+            if result:
+                all_paths.extend(result)
+    
+    return all_paths
+
+def choose(file_name):
+    file = open(file_name, 'r', encoding='utf-8')
+
+    for line in file:
+        print(line, end='')
+
+    file.close()
+
+all_paths = find_file('..','homework_1.py')
+choose(random.choice(all_paths))
+
+****************************************
+
+speakers_file = open('speakers.txt', 'r', encoding='utf-8')
+# data = speakers_file.read()
+# print(data)
+for i_line in speakers_file:
+    print(i_line, end='')
+speakers_file.close()
+
+****************************************
+
+import os
+
+file_path = os.path.join('numbers.txt')
+
+numbers_file = open(file_path, 'r', encoding='utf-8')
+nums = []
+
+for line in numbers_file:
+    nums.append(int(line))
+
+numbers_file.close()
+result = sum(nums)
+
+answer_file = open('answer.txt', 'w')
+answer_file.write(str(result))
+answer_file.close()
+
+
+
+****************************************
+
+import os
+
+def withdraw_code(cur_path):
+    has_file = False
+
+    for element in os.listdir(cur_path):
+        path = os.path.join(cur_path, element)
+        zvezds = '*'*40
+
+        if os.path.isfile(path):
+            has_file = True
+            
+            file_to_read = open(path, 'r', encoding='utf-8')
+            content = file_to_read.read()
+            file_to_read.close()
+
+            file_to_write = open('some_shit.txt', 'a', encoding='utf-8')
+            file_to_write.write(content + '\n{}\n'.format(zvezds))
+            file_to_write.close()
+
+        elif os.path.isdir(path):
+            withdraw_code(path)
+
+    if not has_file and os.listdir(cur_path) == []:
+        print('Не найдено', cur_path)
+
+path_to_file = withdraw_code(os.path.abspath(os.path.join('9 модуль')))
+
+****************************************
+
+import os
+
+def find_file(cur_path, ending):
+    all_paths = []
+    for i_elem in os.listdir(cur_path):
+        path = os.path.join(cur_path, i_elem)
+
+        if i_elem.endswith(ending):
+            all_paths.append(os.path.abspath(path))
+
+        elif os.path.isdir(path):
+            result = find_file(path, ending)
+
+            if result:
+                all_paths.extend(result)
+
+    return all_paths
+
+def get_file_text(path_to_file):
+    file = open(path_to_file, 'r', encoding='utf-8')
+    content = file.read()
+    file.close()
+    return content
+
+all_paths = find_file('..', '.py')
+file_result = open('scripts.txt', 'w', encoding='utf-8')
+for file_path in all_paths:
+    file_result.write(get_file_text(file_path))
+    file_result.write('\n'*2+'*'*40+'\n'*2)
+
+****************************************
+
+speakers_file = open('speakers.txt', 'r', encoding='utf-8')
+sym_count = []
+for i_line in speakers_file:
+    print(i_line, end='')
+    sym_count.append(str(len(i_line)))
+
+sym_str = '\n'.join(sym_count)
+speakers_file.close()
+
+counts_file = open('sym_count.txt', 'w')
+counts_file.write(sym_str)
+counts_file.close()
+
+****************************************
+
+import os
+
+def find_file(cur_path, file_name):
+    print('переходим {}'.format(cur_path))
+
+    for elem in os.listdir(cur_path):
+        path = os.path.join(cur_path, elem)
+        print("  Смотрим", path)
+
+        if file_name == elem:
+            return path
+        
+        elif os.path.isdir(path):
+            print('Это директория')
+            result = find_file(path, file_name)
+            
+            if result:
+                break
+    
+    else:
+        return None
+    
+    return result
+
+file_path = find_file(os.path.abspath(os.path.join('..', '..', '9 модуль')), 'search.py')
+if file_path:
+    print('Абсолютный путь {}'.format(file_path))
+    file = open('search_history.txt', 'a', encoding='utf-8')
+    file.write(file_path + '\n')
+    file.close()
+
+else:
+    print('Путь не найден')
+
+****************************************
+
