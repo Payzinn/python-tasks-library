@@ -5,18 +5,19 @@ root.title('MyWindow')
 root.geometry('600x400')
 
 def changecolor(*args):
-    val1 = int(str_var1.get())
-    val2 = int(str_var2.get())
-    val3 = int(str_var3.get())
-    if isinstance(val1, int):
-        print(val1)
-    if isinstance(val2, int):
-        print(val2)
-    if isinstance(val3, int):
-        print(val3)
-        
-        
-
+    color = []
+    for var in (str_var1, str_var2, str_var3):
+        value = var.get().strip()
+        if value:
+            color.append(int(value))
+        else:
+            color.append(0)
+    root.configure(bg=_from_rgb(tuple(color)))
+            
+def _from_rgb(rgb):
+    """translates an rgb tuple of int to a tkinter friendly color code
+    """
+    return "#%02x%02x%02x" % rgb
 
 str_var1 = StringVar()
 str_var1.trace_add('write', changecolor)
