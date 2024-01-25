@@ -51,6 +51,8 @@ def fivth():
     y = text.rindex('h')
     print(f"Развёрнутая последовательность между первым и последним h: {text[y-1:x:-1]}")
 
+fivth()
+
 def sixth():
     num_list = [[i+j*4 for j in range(4)] for i in range(1, 5)]
     print(num_list)
@@ -78,4 +80,3 @@ def eight():
             x = x - len(alphabet)
         print(alphabet[x+step], end='')
 
-eight()
