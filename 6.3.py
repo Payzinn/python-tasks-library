@@ -21,6 +21,8 @@ def first():
             print(j_key, i_value[j_key])
 
 
+first()
+
 def altfirst():
     data = dict()
     print(data.get('server'))
@@ -133,4 +135,3 @@ def two():
         print('Команда C: {}'.format(i))
 
 
-two()

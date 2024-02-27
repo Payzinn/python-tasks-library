@@ -57,7 +57,7 @@ names = [
 
 
 
-for people in range(10):
+for student in range(10):
     name_surname = random.choice(names)
     group = random.randint(100, 1000)
     grades = [random.randint(2,5) for _ in range(5)]
@@ -66,5 +66,5 @@ for people in range(10):
 
 sorted_students = Student.sort_students(students)
 
-for man in sorted_students:
-    print(man.name_surname, man.group, man.get_average_grade())
+for student in sorted_students:
+    print(student.name_surname, student.group, student.get_average_grade())

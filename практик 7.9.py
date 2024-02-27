@@ -124,9 +124,9 @@ def seventh():
     text = "abc"
     numbers = (10, 20, 30, 40)
 
-    pairs = ((text[i], numbers[i]) for i in range(shortest(text, numbers)))
-    for i in pairs:
-        print(i,end = '')
+    pairs = ((text[item], numbers[item]) for item in range(shortest(text, numbers)))
+    for item in pairs:
+        print(item,end = '')
 
 
 seventh()
