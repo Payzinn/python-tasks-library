@@ -1,0 +1,30 @@
+Время создания: 2024-03-27 15:27:00.215545 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        
+
+Время создания: 2024-03-27 15:27:00.215545 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        
+
+Время создания: 2024-03-27 15:27:00.216544 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        
+

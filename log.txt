@@ -1,0 +1,189 @@
+Время создания: 2024-03-27 15:24:54.759734 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:24:54.760730 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:24:54.760730 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************
+Время создания: 2024-03-27 15:25:03.055153 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:03.056157 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:03.056157 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************
+Время создания: 2024-03-27 15:25:07.847034 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:07.848034 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:07.848034 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************
+Время создания: 2024-03-27 15:25:09.932409 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:09.933410 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:09.933410 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************
+Время создания: 2024-03-27 15:25:25.092373 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:25.092373 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:25.093370 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************
+Время создания: 2024-03-27 15:25:41.666328 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:41.666328 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:25:41.667329 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************
+Время создания: 2024-03-27 15:26:05.147338 
+Имя метода: first_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:26:05.148338 
+Имя метода: second_method 
+Документация метода: 
+        This function does something.
+
+        Parameters:
+            self (object): The object that called the function.
+
+        Returns:
+            None
+        **************************************************
+Время создания: 2024-03-27 15:26:05.148338 
+Имя метода: third_method 
+Документация метода: 
+        This function does something.
+        **************************************************

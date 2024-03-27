@@ -41,5 +41,4 @@ class CargoShip(Ship):
 
 warship = Warship('Briga', 'UZI-190')
 
-cargo = CargoShip('Newman')
-cargo.load()
+warship.sail()

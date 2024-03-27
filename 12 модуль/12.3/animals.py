@@ -4,7 +4,7 @@ class Pet:         #супер класс
 
     def __str__(self):
         tale = 'да' if self.tale else 'нет'
-        return "Всего ног: {}\nХвост присутствует - {}".format(self.legs, tale)
+        return "Всего ног: {} Хвост присутствует - {}".format(self.legs, tale)
 
 
 class Cat(Pet):    #под-класс
