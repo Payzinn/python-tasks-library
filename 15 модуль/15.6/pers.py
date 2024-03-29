@@ -1,6 +1,6 @@
 class Person:
     def __init__(self, name: str, age: int) -> None:
-        self._name = name
+        self.name = name
         self.age = age
 
     def __str__(self) -> str:
@@ -30,5 +30,6 @@ class Person:
 tom = Person("Tom", 25)
 print(tom)
 tom.age = 99
+tom.name = 'vok'
 print(tom.age)
 print(tom)
