@@ -31,5 +31,5 @@ class Dog(Pet):
 
 Cat.action()
 cat = Cat()
-Cat.action()
-Cat.action()
+cat.action()
+cat.action()
