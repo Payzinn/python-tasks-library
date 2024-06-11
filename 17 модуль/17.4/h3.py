@@ -11,7 +11,7 @@ def my_add(a: int, b: int) -> int:
 
 numbers: List[int] = [0, 1, 2, 3, 4]
 
-# print(reduce(my_add, numbers))
+#print(reduce(my_add, numbers))
 def was_counter(a, b):
     if isinstance(a, str):
         a = int(a.count('was'))
