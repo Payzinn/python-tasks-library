@@ -1,0 +1,157 @@
+INFO:__main__:Запущен сервер __main__
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:41:43] "[31m[1mGET /bank/1/4 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:42:06] "[31m[1mGET /bank/1/4 HTTP/1.1[0m" 405 -
+INFO:__main__:Запущен сервер __main__
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:__main__:Запущен сервер __main__
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:__main__:Запущен сервер __main__
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:bank_api:Запущен сервер bank-api
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:bank_api:Запущен сервер bank-api
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 718-138-278
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:56:44] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:56:52] "[33mGET /bank HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/payzinn/Desktop/python-tasks-library/python_part_3_flask/6_module/6.5 logging in file/bank.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:bank_api:Запущен сервер bank-api
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:bank_api:Запущен сервер bank-api
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 718-138-278
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:57:32] "GET /hello HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:57:38] "GET /hello HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/payzinn/Desktop/python-tasks-library/python_part_3_flask/6_module/6.5 logging in file/bank.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:bank_api:Запущен сервер bank-api
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 718-138-278
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:57:39] "[33mGET /hello HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:57:39] "[33mGET /hello HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:57:39] "[33mGET /hello HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:57:46] "[31m[1mGET /bank/1/4 HTTP/1.1[0m" 405 -
+INFO:bank_api:Запущен сервер bank-api
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:bank_api:Запущен сервер bank-api
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 718-138-278
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 13:58:14] "[31m[1mGET /bank/1/4 HTTP/1.1[0m" 405 -
+DEBUG:bank_api:Запрос 4 из 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:00:02] "[35m[1mPOST /bank/1/4 HTTP/1.1[0m" 500 -
+INFO:bank_api:Запущен сервер bank-api
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:bank_api:Запущен сервер bank-api
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 718-138-278
+DEBUG:bank_api:Запрос 4 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Человек 4 не был найден в 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:00:22] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+DEBUG:bank_api:Запрос 3 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Успешно найден файл для 3
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:03:12] "POST /bank/1/3 HTTP/1.1" 200 -
+DEBUG:bank_api:Запрос 1 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Успешно найден файл для 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:03:18] "POST /bank/1/1 HTTP/1.1" 200 -
+DEBUG:bank_api:Запрос 3 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Успешно найден файл для 3
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:03:21] "POST /bank/1/3 HTTP/1.1" 200 -
+DEBUG:bank_api:Запрос 3 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Успешно найден файл для 3
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:04:40] "POST /bank/1/3 HTTP/1.1" 200 -
+DEBUG:bank_api:Запрос 4 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Человек 4 не был найден в 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:04:55] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+DEBUG:bank_api:Запрос 4 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Человек 4 не был найден в 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:05:20] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+DEBUG:bank_api:Запрос 4 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Человек 4 не был найден в 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:05:21] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+DEBUG:bank_api:Запрос 4 из 1
+DEBUG:bank_api:Успешно открыт 1 файл
+DEBUG:bank_api:Человек 4 не был найден в 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 14:05:21] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/payzinn/Desktop/python-tasks-library/python_part_3_flask/6_module/6.5 logging in file/bank.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024-07-12 14:10:52,784 - bank_api INFO     Запущен сервер bank-api
+2024-07-12 14:10:52,787 - werkzeug WARNING   * Debugger is active!
+2024-07-12 14:10:52,790 - werkzeug INFO      * Debugger PIN: 718-138-278
+2024-07-12 14:10:56,807 - werkzeug INFO      * Detected change in '/home/payzinn/Desktop/python-tasks-library/python_part_3_flask/6_module/6.5 logging in file/bank.py', reloading
+2024-07-12 14:10:56,966 - bank_api INFO Запущен сервер bank-api
+2024-07-12 14:10:56,968 - werkzeug WARNING  * Debugger is active!
+2024-07-12 14:10:56,972 - werkzeug INFO  * Debugger PIN: 718-138-278
+2024-07-12 14:10:58,982 - werkzeug INFO  * Detected change in '/home/payzinn/Desktop/python-tasks-library/python_part_3_flask/6_module/6.5 logging in file/bank.py', reloading
+2024-07-12 14:10:59,131 - bank_api INFO - Запущен сервер bank-api
+2024-07-12 14:10:59,133 - werkzeug WARNING -  * Debugger is active!
+2024-07-12 14:10:59,137 - werkzeug INFO -  * Debugger PIN: 718-138-278
+2024-07-12 14:11:09,168 - werkzeug INFO -  * Detected change in '/home/payzinn/Desktop/python-tasks-library/python_part_3_flask/6_module/6.5 logging in file/bank.py', reloading
+2024-07-12 14:11:09,322 - bank_api INFO - Запущен сервер bank-api
+2024-07-12 14:11:09,325 - werkzeug WARNING -  * Debugger is active!
+2024-07-12 14:11:09,328 - werkzeug INFO -  * Debugger PIN: 718-138-278
+2024-07-12 14:11:13,782 - bank_api INFO - Запущен сервер bank-api
+2024-07-12 14:11:13,787 - werkzeug INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-12 14:11:13,787 - werkzeug INFO - [33mPress CTRL+C to quit[0m
+2024-07-12 14:11:13,788 - werkzeug INFO -  * Restarting with stat
+2024-07-12 14:11:13,909 - bank_api INFO - Запущен сервер bank-api
+2024-07-12 14:11:13,911 - werkzeug WARNING -  * Debugger is active!
+2024-07-12 14:11:13,915 - werkzeug INFO -  * Debugger PIN: 718-138-278
+2024-07-12 14:11:22,131 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:22,131 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:22,132 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:22,132 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:22] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+2024-07-12 14:11:23,113 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:23,113 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:23,113 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:23,114 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:23] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+2024-07-12 14:11:23,865 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:23,865 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:23,865 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:23,865 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:23] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+2024-07-12 14:11:24,378 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:24,378 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:24,378 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:24,379 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:24] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+2024-07-12 14:11:24,834 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:24,834 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:24,834 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:24,834 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:24] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+2024-07-12 14:11:25,299 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:25,299 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:25,299 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:25,299 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:25] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -
+2024-07-12 14:11:25,722 - bank_api DEBUG - Запрос 4 из 1
+2024-07-12 14:11:25,722 - bank_api DEBUG - Успешно открыт 1 файл
+2024-07-12 14:11:25,723 - bank_api DEBUG - Человек 4 не был найден в 1
+2024-07-12 14:11:25,723 - werkzeug INFO - 127.0.0.1 - - [12/Jul/2024 14:11:25] "[33mPOST /bank/1/4 HTTP/1.1[0m" 404 -

@@ -2,14 +2,14 @@ import time
 from typing import Callable, Any, Optional
 import functools
 
-def timer_with_precision(_func: Optional[Callable] = None,*, precision: int = 5) -> Callable:
+def timer_with_precision(_func: Optional[Callable] = None) -> Callable:
     def timer_decorator(func: Callable) -> Callable:
         @functools.wraps(func)
         def wrapped_func(*args, **kwargs) -> Any:
             started_at = time.time()
             result = func(*args, **kwargs)
             end = time.time()
-            run = round(end - started_at, precision)
+            run = round(end - started_at, 2)
             print('Функция работала: {}'.format(run))
             return result
         return wrapped_func
@@ -25,7 +25,7 @@ def squares_sum() -> int:
         result += sum([i_num**2 for i_num in range(10000)])
     return result
 
-@timer_with_precision(precision=2)
+@timer_with_precision()
 def cubes(number: int) -> int:
     result = 0
     for _ in range(number + 1):
